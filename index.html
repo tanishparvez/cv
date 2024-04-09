@@ -3,56 +3,84 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Example</title>
+        <style>
+            body {
+                background-image: url('https://cdn.discordapp.com/attachments/1033450476764659784/1226944056416931920/flat-lay-desk-concept-with-copy-space.jpg?ex=66269bb2&is=661426b2&hm=3d9d869bd43d10d64d13249933d162149c816584fd1c9c62d202eefd17040074&'); /* Replace 'your-image-url.jpg' with the URL or path to your image */
+                background-size: cover; /* Adjusts the background image size to cover the entire viewport */
+                background-position: center; /* Centers the background image */
+                background-repeat: no-repeat; /* Prevents the background image from repeating */
+            }
+            /* Overlay semi-transparent color */
+            body::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0); /* Adjust the last value (0.3) to change the darkness level */
+                z-index: -1; /* Ensures the overlay is positioned behind other content */
+            }
+        </style>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kunal's personal Site</title>
+    <title>Tanish's personal Site</title>
 </head>
 
 <body>
+    <h3>
     <table>
         <tr>
             <td>
-                <img src="data:image/jpeg;base64,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"
-                    alt="kunal profile picture">
+                <img src="/My picture.jpg"
+                    height="200px" width="200px" alt="Tanish's profile picture">
             </td>
             <td>
-                <h1>Kunal Dabhane</h1>
-                <p><strong>Address : -</strong>Karmveer nagar, Isbavi,Pandharpur - 413304
-                    <br> <strong>Email</strong>- <a href="mailto:notdatkunal@gmail.com">notdatkunal@gmail.com</a>
+                <h1>Sk Tanish Parvez</h1>
+                <p><strong>Address : -</strong>2E kalipur kancha Road
+                    <br> <strong>Email</strong>- <a href="mailto:sktanishparvezofficial@gmail.com">sktanishparvezofficial@gmail.com</a>
                     <br>
                     <strong><a href="contact me.html">Contact me</a></strong>
             </td>
         </tr>
     </table>
     <hr> <br>
-    <strong>Objective</strong>- To solve complex business problems with the help of relevant digital solutions
+    <strong style="color: red;">Objective</strong>-<b>Initially Make the best-looking website possible, then optimize it for search engines.</b>
     <br>
     <br>
     <a href="education.html"><strong>EDUCATION</strong></a>
     <hr> <br>
-    <strong>SKILLS & INTERESTS</strong>
+    <strong style="color: brown;">SKILLS & INTERESTS</strong>
     <hr>
-    <strong>Skills</strong>:
+    <strong style="color: blueviolet;">Skills</strong>:
     <br> <br>
+    </h3>
     <table border="3">
         <tr>
 
             <td>
                 <table cellspacing="5">
                     <tr>
-                        <td>English (Spoken)</td>
+                        <td><b>English (Spoken)</b></td>
                         <td>⭐⭐⭐⭐⭐</td>
                     </tr>
                     <tr>
-                        <td>Excel</td>
-                        <td>⭐⭐⭐</td>
+                        <td><b>Excel</b></td>
+                        <td>⭐</td>
                     </tr>
                     <tr>
-                        <td>Powerpoint</td>
+                        <td><b>Powerpoint</b></td>
                         <td>⭐⭐⭐⭐</td>
                     </tr>
                     <tr>
-                        <td>CSS</td>
+                        <td><b>CSS</b></td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td><b>Word press</b></td>
                         <td>⭐⭐⭐</td>
                     </tr>
                 </table>
@@ -60,41 +88,61 @@
             <td>
                 <table cellspacing="5">
                     <tr>
-                        <td>English Typing </td>
+                        <td><b>English Typing</b> </td>
                         <td>⭐⭐⭐⭐⭐</td>
                     </tr>
                     <tr>
-                        <td>Word</td>
-                        <td>⭐⭐⭐⭐</td>
+                        <td><b>Word</b></td>
+                        <td>⭐⭐⭐⭐⭐</td>
                     </tr>
                     <tr>
-                        <td>HTML</td>
-                        <td>⭐⭐⭐⭐</td>
+                        <td><b>HTML</b></td>
+                        <td>⭐⭐⭐⭐⭐</td>
                     </tr>
                     <tr>
-                        <td>Photoshop</td>
-                        <td>⭐⭐</td>
+                        <td><b>Photoshop</b></td>
+                        <td>⭐</td>
+                    </tr> 
+                    <tr>
+                        <td><b>Seo</b></td>
+                        <td>⭐⭐⭐⭐⭐</td>
                     </tr>
                 </table>
             </td>
         </tr>
     </table>
     <br>
-    <strong>Interests</strong>: Guitar, Badminton, Reading.
+    <h2>
+    <strong style="color: rgb(208, 4, 254);"><b>INTERESTS</b></strong>: <b>Playing games , Travelling .</b>
     <br> <br>
-    <strong>PROJECTS & EXPERIENCE</strong>
+    <strong><b>PROJECTS & EXPERIENCE</b></strong>
     <hr>
-    <strong>Experience-</strong> <br>
-    <b>Sai Science Institute, Pandharpur — Marketeer</b> <br>
-    <i>
-
-            February 2020 (2 weeks) & July 2021 (2 week)
-        </i>
+    <strong><b>Experience-</b></strong> 
+    </h2>
+    <br>
+    <b><h2>Working as SEO Specialist ("Gaming prism private limted")</h2> 
+        <i> <h2>12 August, 2023.</h2> </i>
+    </b>
     <ol type="I">
-
-        <li>Designed attractive posters which helped in the advertising of the institute. </li>
-        <li>Edited videos for the marketing campaigns to generate 40 thousand AD views on a Facebook marketing campaign. </li>
-        <li>Managed a business page on Facebook which generated 40 k Advertisement views in 1 week of running a campaign. </li>
+        <h3>
+        
+                <li>Create and optimize engaging and informative content, including blog posts, articles, and product guides, to attract and engage target audience members. Write 500 + blogs approx 6 lakh words.</li>
+                <li>Conduct extensive keyword research and analysis to identify high-volume and relevant keywords for inclusion in website content, meta tags, and product descriptions.  </li>
+                <li>Implement on-page optimization techniques, including title tags, meta descriptions, heading tags, and URL structures, to enhance search engine rankings and improve website crawlability. </li>
+                <li>Monitor and analyze key performance metrics using tools such as Google Analytics and Search Console to track website traffic, keyword rankings, and conversion rates.</li>
+                <li>Generate comprehensive reports and insights to evaluate the effectiveness of SEO strategies and make data-driven recommendations for continuous improvement.</li>
+        </h3>
+    </ol>
+    <b><h2>Working as Intern ("Gaming prism private limted")</h2>
+        <i> <h2>12 August, 2023.</h2> </i>
+    </b> <br>
+    <ol type="I">
+        <h3>
+            <li>Skill - HTML,CSS,Java Script</li>
+            <li>Development in JavaScript Frontend</li>
+            <li>Write e-commerce application frontend from scratch</li>
+            <li>Implementing responsive design for webpage</li>
+        </h3>
     </ol>
     <table align="center" cellspacing="5">
         <tr>
